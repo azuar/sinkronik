@@ -1,0 +1,22 @@
+.container {
+  p {
+    font-weight: 200;
+  }
+  .kontak {
+    background: url("https://cdn.discordapp.com/attachments/872315836398968854/1338949111147397240/image.png?ex=67acf108&is=67ab9f88&hm=955e193dd6f6a4a0dd38ad17e451f9cac4543847659aae7dead05c342093acae&");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .card {
+      margin-inline: 30px;
+      background-color: #3b3839;
+      color: white;
+      border-radius: 20px;
+
+      label {
+        color: white !important;
+      }
+    }
+  }
+}
