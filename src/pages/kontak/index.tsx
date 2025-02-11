@@ -51,8 +51,8 @@ const Kontak = () => {
             </div>
           </div>
         </div>
-        <div className="row mt-4 mb-5">
-          <div className="col-lg-4">
+        <div className="contact row mb-5">
+          <div className="col-lg-4 col-md-6 mt-4 ">
             <h2>Sinkronic Creative Agency</h2>
             <p className="fs-3 mb-0">
               <FaPhoneAlt className="me-3" />
@@ -63,28 +63,28 @@ const Kontak = () => {
               Sinkronikcreative@gmail.com
             </p>
           </div>
-          <div className="col-lg-5">
+          <div className="col-lg-5 col-md-6 mt-4 ">
             <h2>Social Media</h2>
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-6">
                 <p className="fs-3 mb-0">
                   <FaInstagram className="me-3" />
                   @Sinkronik
                 </p>
               </div>
-              <div className="col-lg-6">
+              <div className="col-6">
                 <p className="fs-3 mb-0">
                   <FaTiktok className="me-3" />
                   @Sinkronik
                 </p>
               </div>
-              <div className="col-lg-6">
+              <div className="col-6">
                 <p className="fs-3 mb-0">
                   <FaXTwitter className="me-3" />
                   @Sinkronik
                 </p>
               </div>
-              <div className="col-lg-6">
+              <div className="col-6">
                 <p className="fs-3 mb-0">
                   <FaLinkedin className="me-3" />
                   @Sinkronik
@@ -92,7 +92,7 @@ const Kontak = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 d-flex justify-content-center align-items-center">
+          <div className="col-lg-3 d-flex justify-content-center align-items-center mt-4 ">
             <img
               src="https://cdn.discordapp.com/attachments/872315836398968854/1338960353664434177/image.png?ex=67acfb80&is=67abaa00&hm=bc29a222eadcf80259615d24df046bfc151586d56cef61e6822d2c682cc561b7&"
               alt=""
