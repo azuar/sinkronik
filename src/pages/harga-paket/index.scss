@@ -1,0 +1,53 @@
+.harga {
+  margin-top: 3em;
+  background: url("https://ideatax.my.canva.site/mudahnya-mengembangkan-bisnis-dengan-solusi-digital-marketing-efektif/_assets/media/7c44308c61975d2aafb537a1f3a04dbb.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .paket {
+    background-color: #282323e3;
+    padding-inline: 1em;
+    padding-block: 5em;
+
+    .table-config {
+      :nth-child(1) {
+        background: transparent !important;
+        border: none;
+        color: white;
+        border-top-right-radius: 0px !important;
+      }
+      ul :nth-child(1),
+      :nth-child(2),
+      :nth-child(3),
+      :nth-child(4) {
+        font-size: 16px !important;
+      }
+
+      ul {
+        margin-bottom: 0;
+      }
+
+      th {
+        border-top-right-radius: 20px !important;
+        text-align: center !important;
+        border-top-left-radius: 20px !important;
+        background-color: white !important;
+        color: black !important;
+      }
+      tbody {
+        tr {
+          height: 100px !important;
+        }
+
+        td {
+          background-color: #252021;
+          border: 1px solid white;
+          :nth-child(1) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
