@@ -33,7 +33,12 @@ const Client = () => {
             <div className="justify-content-center align-items-center gap-5">
               {clientLogos.map((client, _index) => (
                 <span>
-                  <img src={`${client}`} alt="" height={84} className="m-4" />
+                  <img
+                    src={`${client}`}
+                    alt="client"
+                    height={84}
+                    className="m-4"
+                  />
                 </span>
               ))}
             </div>

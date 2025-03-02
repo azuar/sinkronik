@@ -1,8 +1,5 @@
 import { Button } from "antd";
 import "./index.scss";
-import { FaPeopleGroup } from "react-icons/fa6";
-import { LuChartArea } from "react-icons/lu";
-import { BsClockHistory } from "react-icons/bs";
 const Home = () => {
   return (
     <>
@@ -29,6 +26,9 @@ const Home = () => {
                   Konsultasikan Sekarang
                 </Button>
               </div>
+              <div className="col-md-6 d-flex justify-content-end align-items-end whatsapp-icon">
+                <img src="wa.svg" alt="wa" height={60} />
+              </div>
             </div>
           </div>
         </div>
@@ -50,14 +50,18 @@ const Home = () => {
           </p>
           <div className="row">
             <div className="col-md-5">
-              <img src="male.svg" alt="" height="100%" width="100%" />
+              <img src="male.svg" alt="male" height="100%" width="100%" />
             </div>
             <div className="col-md-7">
               <div className="card mb-4 mt-3">
                 <div className="card-body p-4">
                   <div className="row">
                     <div className="col-2 d-flex justify-content-center align-items-center">
-                      <FaPeopleGroup className="icon" />
+                      <img
+                        src="people.svg"
+                        alt="people"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="col-10">
                       <h3 className="">Kurangnya Sumber Daya</h3>
@@ -73,7 +77,7 @@ const Home = () => {
                 <div className="card-body p-4">
                   <div className="row">
                     <div className="col-2 d-flex justify-content-center align-items-center">
-                      <LuChartArea className="icon" />
+                      <img src="chart.svg" alt="chart" className="img-fluid" />
                     </div>
                     <div className="col-10">
                       <h3 className="">Kurangnya Sumber Daya</h3>
@@ -89,7 +93,7 @@ const Home = () => {
                 <div className="card-body p-4">
                   <div className="row">
                     <div className="col-2 d-flex justify-content-center align-items-center">
-                      <BsClockHistory className="icon" />
+                      <img src="clock.svg" alt="clock" className="img-fluid" />
                     </div>
                     <div className="col-10">
                       <h3 className="">Kurangnya Sumber Daya</h3>

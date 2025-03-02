@@ -15,6 +15,12 @@
       color: white !important;
     }
   }
+
+  @media (max-width: 995px) {
+    img {
+      max-height: 300px;
+    }
+  }
 }
 .contact {
   @media (max-width: 767px) {

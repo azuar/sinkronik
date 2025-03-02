@@ -11,8 +11,8 @@ const Kontak = () => {
       <div className="kontak">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 d-flex align-items-end justify-content-center">
-              <img src="female.svg" alt="" height={"80%"} />
+            <div className="col-lg-6 d-flex align-items-end justify-content-center mt-5">
+              <img src="female.svg" alt="female" width={"90%"} />
             </div>
             <div className="col-lg-6 mb-5">
               <p className="fs-1 text-center mt-5">

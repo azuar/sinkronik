@@ -1,18 +1,57 @@
 .layanan {
   margin-top: 5em;
-
   .layanan-background {
-    background-color: #e1f2f5;
+    background-image: url("/bg-solution.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
     border-left: 5px solid #00b0c4;
-    padding: 2em;
+    padding-bottom: 3em;
 
     p {
       font-weight: 200;
     }
-  }
 
-  .row > * {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    .solution-list {
+      padding-inline: 2em;
+      .row > * {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+
+    .solution-image {
+      padding-inline: 13px;
+      .row > * {
+        padding: 0;
+      }
+      .img-bg1 {
+        background-image: url("/section-1.svg");
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .img-bg2 {
+        background-image: url("/section-2.svg");
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .img-bg3 {
+        background-image: url("/section-3.svg");
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .img-bg4 {
+        background-image: url("/section-4.svg");
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
   }
 }
