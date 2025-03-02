@@ -18,7 +18,7 @@ const Client = () => {
   ];
   return (
     <>
-      <div className="section" id="client"></div>
+      <div className="section" id="klien"></div>
       <div className="client">
         <div className="container text-center">
           <h1 className="fw-bolder">

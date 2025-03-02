@@ -8,7 +8,7 @@ const HargaPaket = () => {
       key: "name",
       width: 320,
       fixed: true,
-      render: (text) => <a>{text}</a>,
+      render: (text) => <>{text}</>,
     },
     {
       title: "Basic",

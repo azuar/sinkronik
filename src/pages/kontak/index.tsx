@@ -12,11 +12,7 @@ const Kontak = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 d-flex align-items-end justify-content-center">
-              <img
-                src="https://cdn.discordapp.com/attachments/872315836398968854/1338949524663566417/image-removebg-preview_2.png?ex=67acf16b&is=67ab9feb&hm=351ee326b1b3247e0c72c00e05dfd634e1a5a8bd208f5d8bf3bbcfbece4ab4a2&"
-                alt=""
-                height={"80%"}
-              />
+              <img src="female.svg" alt="" height={"80%"} />
             </div>
             <div className="col-lg-6 mb-5">
               <p className="fs-1 text-center mt-5">
@@ -96,11 +92,7 @@ const Kontak = () => {
               </div>
             </div>
             <div className="col-lg-3 d-flex justify-content-center align-items-center mt-4 ">
-              <img
-                src="https://cdn.discordapp.com/attachments/872315836398968854/1338960353664434177/image.png?ex=67acfb80&is=67abaa00&hm=bc29a222eadcf80259615d24df046bfc151586d56cef61e6822d2c682cc561b7&"
-                alt=""
-                height={100}
-              />
+              <img src="sinkronik.svg" alt="sinkronik-logo" height={100} />
             </div>
           </div>
         </div>

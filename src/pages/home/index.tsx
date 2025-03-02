@@ -11,11 +11,7 @@ const Home = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <img
-                  src="https://ideatax.my.canva.site/mudahnya-mengembangkan-bisnis-dengan-solusi-digital-marketing-efektif/_assets/media/917fd67f8efc262680a525b656a762c4.png"
-                  alt=""
-                  height="280px"
-                />
+                <img src="logo.svg" alt="logo" height="120px" />
                 <div className="text-white">
                   <p>
                     Ingin <span>Bisnis Naik Level?</span>
@@ -54,7 +50,7 @@ const Home = () => {
           </p>
           <div className="row">
             <div className="col-md-5">
-              <img src="people.png" alt="" height="100%" width="100%" />
+              <img src="male.svg" alt="" height="100%" width="100%" />
             </div>
             <div className="col-md-7">
               <div className="card mb-4 mt-3">

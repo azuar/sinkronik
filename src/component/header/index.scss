@@ -1,0 +1,12 @@
+.navbar {
+  padding-block: 20px;
+  .nav-link {
+    color: black;
+    margin-right: 30px;
+
+    &:hover {
+      color: red;
+      border-bottom: 1px solid red;
+    }
+  }
+}
