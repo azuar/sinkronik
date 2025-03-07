@@ -10,7 +10,7 @@ const Section1 = () => {
           <div className="row">
             <div className="col-lg-5 col-md-5 mt-5">
               <div className="d-flex align-items-center justify-content-center tags">
-                <img src="up.svg" alt="up" height={100} />
+                <img src="icons/up.svg" alt="up" height={100} />
                 <h1 className="text-white">10 X</h1>
               </div>
               <div className="text-center text-white">
@@ -19,7 +19,7 @@ const Section1 = () => {
                 </p>
               </div>
               <div className="d-flex align-items-center justify-content-center tags pt-5">
-                <img src="up.svg" alt="up" height={100} />
+                <img src="icons/up.svg" alt="up" height={100} />
                 <h2 className="text-white">
                   Omset <br /> Naik
                 </h2>
@@ -32,7 +32,7 @@ const Section1 = () => {
             </div>
             <div className="col-lg-7 col-md-7 d-flex justify-content-center align-items-center">
               <img
-                src="sosmed.webp"
+                src="/solution/sosmed.webp"
                 alt="sosmed"
                 className="img-fluid"
                 width={"100%"}

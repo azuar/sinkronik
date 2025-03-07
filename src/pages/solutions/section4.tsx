@@ -10,7 +10,7 @@ const Section4 = () => {
               <div className="row pt-5">
                 <div className="col-lg-12 col-md-6 col-sm-6 col-12 ">
                   <div className="d-flex align-items-center justify-content-center tags">
-                    <img src="up.svg" alt="up" height={100} />
+                    <img src="icons/up.svg" alt="up" height={100} />
                     <h1>3 X</h1>
                   </div>
                   <div className="text-center">
@@ -21,7 +21,7 @@ const Section4 = () => {
                 </div>
                 <div className="col-lg-12 col-md-6 col-sm-6 col-12">
                   <div className="d-flex align-items-center justify-content-center tags">
-                    <img src="up.svg" alt="up" height={100} />
+                    <img src="icons/up.svg" alt="up" height={100} />
                     <h2 className="mb-0">
                       Meningkatkan <br /> daya saing
                     </h2>
@@ -37,7 +37,7 @@ const Section4 = () => {
             </div>
             <div className="col-lg-8 d-flex align-items-center">
               <img
-                src="seo.webp"
+                src="/solution/seo.webp"
                 alt="seo"
                 className="img-fluid mt-5"
                 width={"100%"}

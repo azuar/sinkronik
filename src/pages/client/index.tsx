@@ -34,7 +34,7 @@ const Client = () => {
               {clientLogos.map((client, _index) => (
                 <span key={_index}>
                   <img
-                    src={`${client}`}
+                    src={`/client/${client}`}
                     alt="client"
                     height={84}
                     className="m-4"

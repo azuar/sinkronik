@@ -8,7 +8,7 @@ const Home = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <img src="logo.svg" alt="logo" height="120px" />
+                <img src="logo/logo.svg" alt="logo" height="120px" />
                 <div className="text-white">
                   <p>
                     Ingin <span>Bisnis Naik Level?</span>
@@ -27,7 +27,7 @@ const Home = () => {
                 </Button>
               </div>
               <div className="col-md-6 d-flex justify-content-end align-items-end whatsapp-icon">
-                <img src="wa.svg" alt="wa" height={60} />
+                <img src="icons/wa.svg" alt="wa" height={60} />
               </div>
             </div>
           </div>
@@ -50,7 +50,12 @@ const Home = () => {
           </p>
           <div className="row">
             <div className="col-md-5">
-              <img src="male.svg" alt="male" height="100%" width="100%" />
+              <img
+                src="others/male.svg"
+                alt="male"
+                height="100%"
+                width="100%"
+              />
             </div>
             <div className="col-md-7">
               <div className="card mb-4 mt-3">
@@ -58,7 +63,7 @@ const Home = () => {
                   <div className="row">
                     <div className="col-2 d-flex justify-content-center align-items-center">
                       <img
-                        src="people.svg"
+                        src="icons/people.svg"
                         alt="people"
                         className="img-fluid"
                       />
@@ -77,7 +82,11 @@ const Home = () => {
                 <div className="card-body p-4">
                   <div className="row">
                     <div className="col-2 d-flex justify-content-center align-items-center">
-                      <img src="chart.svg" alt="chart" className="img-fluid" />
+                      <img
+                        src="icons/chart.svg"
+                        alt="chart"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="col-10">
                       <h3 className="">Kurangnya Sumber Daya</h3>
@@ -93,7 +102,11 @@ const Home = () => {
                 <div className="card-body p-4">
                   <div className="row">
                     <div className="col-2 d-flex justify-content-center align-items-center">
-                      <img src="clock.svg" alt="clock" className="img-fluid" />
+                      <img
+                        src="icons/clock.svg"
+                        alt="clock"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="col-10">
                       <h3 className="">Kurangnya Sumber Daya</h3>

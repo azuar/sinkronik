@@ -17,7 +17,7 @@ const Layanan = () => {
                 </div>
                 <div className="col-lg-6 mb-5">
                   <div className="d-flex align-items-center gap-3">
-                    <img height={40} src="lamp.svg" alt="lamp" />
+                    <img height={40} src="icons/lamp.svg" alt="lamp" />
                     <h1 className="fs-3 m-0">Brand Development</h1>
                   </div>
                   <hr />
@@ -31,7 +31,7 @@ const Layanan = () => {
                 </div>
                 <div className="col-lg-6 mb-5">
                   <div className="d-flex align-items-center gap-3">
-                    <img height={40} src="like.svg" alt="like" />
+                    <img height={40} src="icons/like.svg" alt="like" />
                     <h1 className="fs-3 m-0">Brand Development</h1>
                   </div>
                   <hr />
@@ -44,7 +44,7 @@ const Layanan = () => {
                 </div>
                 <div className="col-lg-6 mb-5">
                   <div className="d-flex align-items-center gap-3">
-                    <img height={40} src="computer.svg" alt="computer" />
+                    <img height={40} src="icons/computer.svg" alt="computer" />
                     <h1 className="fs-3 m-0">Brand Development</h1>
                   </div>
                   <hr />
@@ -58,7 +58,7 @@ const Layanan = () => {
                 </div>
                 <div className="col-lg-6 mb-5">
                   <div className="d-flex align-items-center gap-3">
-                    <img height={40} src="clip.svg" alt="clip" />
+                    <img height={40} src="icons/clip.svg" alt="clip" />
                     <h1 className="fs-3 m-0">Brand Development</h1>
                   </div>
                   <hr />

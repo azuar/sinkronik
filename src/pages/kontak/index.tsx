@@ -12,7 +12,7 @@ const Kontak = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 d-flex align-items-end justify-content-center mt-5">
-              <img src="female.svg" alt="female" width={"90%"} />
+              <img src="others/female.svg" alt="female" width={"90%"} />
             </div>
             <div className="col-lg-6 mb-5">
               <p className="fs-1 text-center mt-5">
@@ -92,7 +92,7 @@ const Kontak = () => {
               </div>
             </div>
             <div className="col-lg-3 d-flex justify-content-center align-items-center mt-4 ">
-              <img src="sinkronik.svg" alt="sinkronik-logo" height={100} />
+              <img src="logo/sinkronik.svg" alt="sinkronik-logo" height={100} />
             </div>
           </div>
         </div>

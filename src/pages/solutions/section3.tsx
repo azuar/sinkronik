@@ -10,7 +10,7 @@ const Section3 = () => {
           <div className="row">
             <div className="col-xl-8 col-lg-6 d-flex justify-content-center align-items-center">
               <img
-                src="iklan.webp"
+                src="/solution/iklan.webp"
                 alt="iklan"
                 className="img-fluid"
                 width={"100%"}
@@ -21,7 +21,7 @@ const Section3 = () => {
               <div className="row mt-5">
                 <div className="col-xl-12 col-md-6 col-md-6 col-sm-6 col-12">
                   <div className="d-flex align-items-center justify-content-center tags">
-                    <img src="up.svg" alt="up" height={100} />
+                    <img src="icons/up.svg" alt="up" height={100} />
                     <h2 className="text-white">
                       Meningkatkan <br />
                       daya saing
@@ -37,7 +37,7 @@ const Section3 = () => {
                 </div>
                 <div className="col-xl-12 col-md-6 col-md-6 col-sm-6 col-12">
                   <div className="d-flex align-items-center justify-content-center tags">
-                    <img src="up.svg" alt="up" height={100} />
+                    <img src="icons/up.svg" alt="up" height={100} />
                     <h1 className="text-white">5 X</h1>
                   </div>
                   <div className="text-center text-white">
@@ -47,7 +47,7 @@ const Section3 = () => {
 
                     <h3>Scan For Better Quality</h3>
                     <img
-                      src="qr.svg"
+                      src="solution/qr.svg"
                       alt="qr"
                       height={150}
                       className="mt-3 mb-5"

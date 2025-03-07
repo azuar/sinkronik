@@ -1,4 +1,5 @@
 const Section2 = () => {
+  const brandingLogos = ["1.svg", "2.svg", "3.svg", "4.svg", "5.svg", "6.svg"];
   return (
     <>
       <div className="section" id="brand-development"></div>
@@ -8,7 +9,12 @@ const Section2 = () => {
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12 px-4">
               <div className="d-flex align-items-center justify-content-center tags">
-                <img src="eye.svg" alt="up" height={150} className="me-3" />
+                <img
+                  src="icons/eye.svg"
+                  alt="up"
+                  height={150}
+                  className="me-3"
+                />
                 <div className="row">
                   <div className="col-12">
                     <h2>Brand Mudah Diingat</h2>
@@ -22,7 +28,7 @@ const Section2 = () => {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 px-4">
               <div className="d-flex align-items-center justify-content-center tags">
-                <img src="up.svg" alt="up" height={150} />
+                <img src="icons/up.svg" alt="up" height={150} />
                 <div className="row">
                   <div className="col-12">
                     <h2>Trust Meningkat</h2>
@@ -31,6 +37,21 @@ const Section2 = () => {
                       kepercayaan
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 text-center">
+              <div className="brand-logo justify-content-center align-items-center my-4">
+                <div className="justify-content-center align-items-center">
+                  {brandingLogos.map((brand, _index) => (
+                    <span key={_index}>
+                      <img
+                        src={`/logo-branding/${brand}`}
+                        alt="client"
+                        height={230}
+                      />
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
