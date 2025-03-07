@@ -49,7 +49,7 @@ const Header: React.FC = () => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               {items.map((item, _index) => (
-                <a className="nav-link fs-5" href={item.href}>
+                <a className="nav-link fs-5" href={item.href} key={_index}>
                   {item.label}
                 </a>
               ))}
