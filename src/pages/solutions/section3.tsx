@@ -1,3 +1,5 @@
+import { Button } from "antd";
+
 const Section3 = () => {
   return (
     <>
@@ -56,6 +58,15 @@ const Section3 = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="text-center">
+            <Button
+              color="default"
+              variant="solid"
+              className="button mb-5 mt-3"
+            >
+              Tanya Lebih Lanjut tentang Video Editing
+            </Button>
           </div>
         </div>
       </div>

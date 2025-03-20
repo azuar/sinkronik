@@ -1,3 +1,5 @@
+import { Button } from "antd";
+
 const Section1 = () => {
   return (
     <>
@@ -5,7 +7,7 @@ const Section1 = () => {
       <div className="section1">
         <div className="container">
           <h2 className="text-center text-white pt-5">
-            Sosial Media Managemen
+            Sosial Media Manajemen
           </h2>
           <div className="row">
             <div className="col-lg-5 col-md-5 mt-5">
@@ -39,6 +41,15 @@ const Section1 = () => {
                 height={"100%"}
               />
             </div>
+          </div>
+          <div className="text-center">
+            <Button
+              color="default"
+              variant="solid"
+              className="button mb-5 mt-3"
+            >
+              Tanya Lebih Lanjut tentang Sosial Media Manajemen
+            </Button>
           </div>
         </div>
       </div>

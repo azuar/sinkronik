@@ -1,3 +1,5 @@
+import { Button } from "antd";
+
 const Section2 = () => {
   const brandingLogos = ["1.svg", "2.svg", "3.svg", "4.svg", "5.svg", "6.svg"];
   return (
@@ -5,7 +7,7 @@ const Section2 = () => {
       <div className="section" id="brand-development"></div>
       <div className="section2">
         <div className="container">
-          <h2 className="text-center pt-5 pb-5">Sosial Media Managemen</h2>
+          <h2 className="text-center pt-5 pb-5">Brand Development</h2>
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12 px-4">
               <div className="d-flex align-items-center justify-content-center tags">
@@ -55,6 +57,15 @@ const Section2 = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="text-center">
+            <Button
+              color="default"
+              variant="solid"
+              className="button mb-5 mt-3"
+            >
+              Tanya Lebih Lanjut tentang Brand Development
+            </Button>
           </div>
         </div>
       </div>

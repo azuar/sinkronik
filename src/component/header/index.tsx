@@ -22,6 +22,11 @@ const Header: React.FC = () => {
     },
     {
       key: "4",
+      label: "Solusi",
+      href: "#solusi",
+    },
+    {
+      key: "5",
       label: "Harga & Paket",
       href: "#harga",
     },

@@ -11,12 +11,13 @@ const PublicLayout: React.FC = () => {
         <Outlet />
       </div>
       <FloatButton.Group>
+        <FloatButton.BackTop icon={<UpCircleOutlined />} />
+
         <FloatButton
           icon={<WhatsAppOutlined />}
           onClick={() => window.open("https://wa.me/6282118606158", "_blank")}
           className="button-float-wa"
         />
-        <FloatButton.BackTop icon={<UpCircleOutlined />} />
       </FloatButton.Group>
     </>
   );
