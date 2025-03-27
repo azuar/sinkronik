@@ -45,9 +45,9 @@ const Section6 = () => {
                     dengan menyesuaikan tujuan perusahaan terhadap kondisi pasar
                     yang ada.
                   </p>
-                  <div className="text-center">
+                  <div className="text-center px-5">
                     <img
-                      src="solution/diagram.png"
+                      src="solution/diagram.svg"
                       alt="diagram"
                       className="img-fluid"
                     />
@@ -77,7 +77,7 @@ const Section6 = () => {
                     kesuksesan jangka panjang.
                   </p>
                   {solutionList.map((solution, _index) => (
-                    <div className="solution-list px-3">
+                    <div className="solution-list px-3" key={_index}>
                       <h4 className="fw-bold" style={{ color: "#C6E6FF" }}>
                         {solution.title}
                       </h4>

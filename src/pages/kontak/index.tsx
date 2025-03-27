@@ -1,10 +1,51 @@
-import { Button, Form, Input } from "antd";
+import { Button, Form, Input, Spin } from "antd";
 import "./index.scss";
 import { FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaLinkedin, FaTiktok, FaXTwitter } from "react-icons/fa6";
+import { useState } from "react";
+import dayjs from "dayjs";
+import emailjs from '@emailjs/browser';
+import Swal from "sweetalert2";
+
+interface MeetingDetails {
+  [key: string]: string; // Jika ada properti lain yang tidak diketahui
+}
+
 
 const Kontak = () => {
+  const [loading, setLoading] = useState(false);
+  const [form] = Form.useForm();
+  const sendEmail = (value:MeetingDetails) => {
+    const date = dayjs(value.meeting_date).format("DD MMMM YYYY");
+    value.meeting_date = date;
+    setLoading(true);
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        value,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        Swal.fire({
+          title: "Berhasil!",
+          text: "Jadwal berhasil dikirim.",
+          icon: "success",
+        });
+        setLoading(false);
+        form.resetFields();
+      })
+      .catch(() => {
+        setLoading(false);
+        Swal.fire({
+          title: "Gagal!",
+          text: "Jadwal gagal dikirim.",
+          icon: "error",
+        });
+      });
+  };
+
   return (
     <>
       <div className="section" id="kontak"></div>
@@ -20,30 +61,45 @@ const Kontak = () => {
                 Digital untuk{" "}
                 <strong>Meningkatkan Visibilitas dan Penjualan!</strong>
               </p>
+              <Spin spinning={loading}>
               <div className="card">
                 <div className="card-body">
                   <p className="fs-4">Ingin info lebih lanjut?</p>
-                  <Form size="large" layout="vertical">
-                    <Form.Item label="Nama Lengkap *">
+                  <Form size="large" layout="vertical" form={form} onFinish={sendEmail}>
+                    <Form.Item label="Nama Lengkap *" name="name"
+                        rules={[
+                          { required: true, message: "Nama harus diisi!" },
+                        ]}>
                       <Input placeholder="Nama Lengkap .." />
                     </Form.Item>
-                    <Form.Item label="Alamat Email *">
+                    <Form.Item label="Alamat Email *" name="email"
+                        rules={[
+                          { required: true, message: "Email harus diisi!" },
+                        ]}>
                       <Input placeholder="Alamat Email .." />
                     </Form.Item>
-                    <Form.Item label="Nomer Whatsapp *">
+                    <Form.Item label="Nomer Whatsapp *" name="whatsapp"
+                        rules={[
+                          { required: true, message: "Whatsapp harus diisi!" },
+                        ]}>
                       <Input placeholder="Nomer Whatsapp ..." />
                     </Form.Item>
-                    <Form.Item label="Industri Bisnis Anda *">
+                    <Form.Item label="Industri Bisnis Anda *" name="industri"
+                        rules={[
+                          { required: true, message: "Industri Bisnis harus diisi!" },
+                        ]}>
                       <Input placeholder="Industri Bisnis Anda .." />
                     </Form.Item>
-                  </Form>
-                  <div className="text-center">
-                    <Button color="default" className="button mt-3 mb-3">
+                    <div className="text-center">
+                    <Button color="default" className="button mt-3 mb-3" htmlType="submit">
                       <strong>Submit</strong>
                     </Button>
                   </div>
+                  </Form>
+                  
                 </div>
               </div>
+              </Spin>
             </div>
           </div>
         </div>
