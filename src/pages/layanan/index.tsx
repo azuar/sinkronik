@@ -72,7 +72,17 @@ const Layanan = () => {
                   </p>
                 </div>
                 <div className="text-center">
-                  <Button color="default" variant="solid" className="button">
+                  <Button
+                    color="default"
+                    variant="solid"
+                    className="button"
+                    onClick={() =>
+                      window.open(
+                        "https://wa.me/6285258887844?text=Hallo, Saya ingin konsultasi terkait digital marketing. bisa bantu saya ?",
+                        "_blank"
+                      )
+                    }
+                  >
                     Konsultasikan Sekarang
                   </Button>
 

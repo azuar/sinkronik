@@ -47,6 +47,12 @@ const Section1 = () => {
               color="default"
               variant="solid"
               className="button mb-5 mt-3"
+              onClick={() =>
+                window.open(
+                  "https://wa.me/6285258887844?text=Hallo, Saya ingin Tanya Lebih Lanjut tentang Sosial Media Manajemen. bisa bantu saya ?",
+                  "_blank"
+                )
+              }
             >
               Tanya Lebih Lanjut tentang Sosial Media Manajemen
             </Button>

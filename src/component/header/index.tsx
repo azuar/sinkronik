@@ -61,7 +61,17 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="d-flex">
-            <Button type="text" className="fs-2 me-3" icon={<BsWhatsapp />} />
+            <Button
+              type="text"
+              className="fs-2 me-3"
+              icon={<BsWhatsapp />}
+              onClick={() =>
+                window.open(
+                  "https://wa.me/6285258887844?text=Hallo, Saya ingin konsultasi terkait digital marketing. bisa bantu saya ?",
+                  "_blank"
+                )
+              }
+            />
           </div>
         </div>
       </nav>

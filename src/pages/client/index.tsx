@@ -46,7 +46,17 @@ const Client = () => {
           <p className="fs-4 mt-5">
             Jadilah bagian dari klien sukses kami berikutnya!
           </p>
-          <Button color="default" variant="solid" className="button mb-5 mt-3">
+          <Button
+            color="default"
+            variant="solid"
+            className="button mb-5 mt-3"
+            onClick={() =>
+              window.open(
+                "https://wa.me/6285258887844?text=Hallo, Saya ingin konsultasi terkait digital marketing. bisa bantu saya ?",
+                "_blank"
+              )
+            }
+          >
             Konsultasikan Sekarang
           </Button>
         </div>

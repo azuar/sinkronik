@@ -22,7 +22,15 @@ const Home = () => {
                     Digital Marketing Perusahaan Anda!
                   </span>
                 </div>
-                <Button className="button mt-5 mb-5">
+                <Button
+                  className="button mt-5 mb-5"
+                  onClick={() =>
+                    window.open(
+                      "https://wa.me/6285258887844?text=Hallo, Saya ingin konsultasi terkait digital marketing. bisa bantu saya ?",
+                      "_blank"
+                    )
+                  }
+                >
                   Konsultasikan Sekarang
                 </Button>
               </div>
@@ -123,6 +131,12 @@ const Home = () => {
                   color="default"
                   variant="solid"
                   className="button mb-5 mt-3"
+                  onClick={() =>
+                    window.open(
+                      "https://wa.me/6285258887844?text=Hallo, Saya ingin konsultasi terkait digital marketing. bisa bantu saya ?",
+                      "_blank"
+                    )
+                  }
                 >
                   Konsultasikan Sekarang
                 </Button>

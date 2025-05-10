@@ -54,6 +54,12 @@ const Section5 = () => {
               color="default"
               variant="solid"
               className="button mb-5 mt-3"
+              onClick={() =>
+                window.open(
+                  "https://wa.me/6285258887844?text=Hallo, Saya ingin Tanya Lebih Lanjut tentang Website Management & SEO. bisa bantu saya ?",
+                  "_blank"
+                )
+              }
             >
               Tanya Lebih Lanjut tentang Website Management & SEO
             </Button>

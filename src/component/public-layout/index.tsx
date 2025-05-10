@@ -15,7 +15,12 @@ const PublicLayout: React.FC = () => {
 
         <FloatButton
           icon={<WhatsAppOutlined />}
-          onClick={() => window.open("https://wa.me/6282118606158", "_blank")}
+          onClick={() =>
+            window.open(
+              "https://wa.me/6285258887844?text=Hallo, Saya ingin konsultasi terkait digital marketing. bisa bantu saya ?",
+              "_blank"
+            )
+          }
           className="button-float-wa"
         />
       </FloatButton.Group>
