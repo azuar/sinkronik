@@ -5,18 +5,17 @@ import { IoMdMail } from "react-icons/io";
 import { FaLinkedin, FaTiktok, FaXTwitter } from "react-icons/fa6";
 import { useState } from "react";
 import dayjs from "dayjs";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
 interface MeetingDetails {
   [key: string]: string; // Jika ada properti lain yang tidak diketahui
 }
 
-
 const Kontak = () => {
   const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
-  const sendEmail = (value:MeetingDetails) => {
+  const sendEmail = (value: MeetingDetails) => {
     const date = dayjs(value.meeting_date).format("DD MMMM YYYY");
     value.meeting_date = date;
     setLoading(true);
@@ -62,43 +61,66 @@ const Kontak = () => {
                 <strong>Meningkatkan Visibilitas dan Penjualan!</strong>
               </p>
               <Spin spinning={loading}>
-              <div className="card">
-                <div className="card-body">
-                  <p className="fs-4">Ingin info lebih lanjut?</p>
-                  <Form size="large" layout="vertical" form={form} onFinish={sendEmail}>
-                    <Form.Item label="Nama Lengkap *" name="name"
+                <div className="card">
+                  <div className="card-body">
+                    <p className="fs-4">Ingin info lebih lanjut?</p>
+                    <Form
+                      size="large"
+                      layout="vertical"
+                      form={form}
+                      onFinish={sendEmail}
+                    >
+                      <Form.Item
+                        label="Nama Lengkap *"
+                        name="name"
                         rules={[
                           { required: true, message: "Nama harus diisi!" },
-                        ]}>
-                      <Input placeholder="Nama Lengkap .." />
-                    </Form.Item>
-                    <Form.Item label="Alamat Email *" name="email"
+                        ]}
+                      >
+                        <Input placeholder="Nama Lengkap .." />
+                      </Form.Item>
+                      <Form.Item
+                        label="Alamat Email *"
+                        name="email"
                         rules={[
                           { required: true, message: "Email harus diisi!" },
-                        ]}>
-                      <Input placeholder="Alamat Email .." />
-                    </Form.Item>
-                    <Form.Item label="Nomer Whatsapp *" name="whatsapp"
+                        ]}
+                      >
+                        <Input placeholder="Alamat Email .." />
+                      </Form.Item>
+                      <Form.Item
+                        label="Nomer Whatsapp *"
+                        name="whatsapp"
                         rules={[
                           { required: true, message: "Whatsapp harus diisi!" },
-                        ]}>
-                      <Input placeholder="Nomer Whatsapp ..." />
-                    </Form.Item>
-                    <Form.Item label="Industri Bisnis Anda *" name="industri"
+                        ]}
+                      >
+                        <Input placeholder="Nomer Whatsapp ..." />
+                      </Form.Item>
+                      <Form.Item
+                        label="Industri Bisnis Anda *"
+                        name="industri"
                         rules={[
-                          { required: true, message: "Industri Bisnis harus diisi!" },
-                        ]}>
-                      <Input placeholder="Industri Bisnis Anda .." />
-                    </Form.Item>
-                    <div className="text-center">
-                    <Button color="default" className="button mt-3 mb-3" htmlType="submit">
-                      <strong>Submit</strong>
-                    </Button>
+                          {
+                            required: true,
+                            message: "Industri Bisnis harus diisi!",
+                          },
+                        ]}
+                      >
+                        <Input placeholder="Industri Bisnis Anda .." />
+                      </Form.Item>
+                      <div className="text-center">
+                        <Button
+                          color="default"
+                          className="button mt-3 mb-3"
+                          htmlType="submit"
+                        >
+                          <strong>Submit</strong>
+                        </Button>
+                      </div>
+                    </Form>
                   </div>
-                  </Form>
-                  
                 </div>
-              </div>
               </Spin>
             </div>
           </div>
@@ -108,10 +130,10 @@ const Kontak = () => {
         <div className="container">
           <div className="contact row mb-5">
             <div className="col-lg-4 col-md-6 mt-4 ">
-              <h2>Sinkronic Creative Agency</h2>
+              <h2>Sinkronik Creative Agency</h2>
               <p className="fs-3 mb-0">
                 <FaPhoneAlt className="me-3" />
-                08xx - xxxx - xxxx
+                0852-5888-7844
               </p>
               <p className="fs-3 mb-0">
                 <IoMdMail className="me-3" />
@@ -122,16 +144,24 @@ const Kontak = () => {
               <h2>Social Media</h2>
               <div className="row">
                 <div className="col-6">
-                  <p className="fs-3 mb-0">
+                  <a
+                    className="fs-3 mb-0"
+                    href="https://www.instagram.com/sinkronikcreative/"
+                    target="_blank"
+                  >
                     <FaInstagram className="me-3" />
                     @Sinkronik
-                  </p>
+                  </a>
                 </div>
                 <div className="col-6">
-                  <p className="fs-3 mb-0">
+                  <a
+                    className="fs-3 mb-0"
+                    href="http://tiktok.com/@sinkronikcreative"
+                    target="_blank"
+                  >
                     <FaTiktok className="me-3" />
                     @Sinkronik
-                  </p>
+                  </a>
                 </div>
                 <div className="col-6">
                   <p className="fs-3 mb-0">

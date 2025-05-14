@@ -1,38 +1,38 @@
 import React from "react";
 import "./index.scss";
-import { Button } from "antd";
+import { Button, Dropdown } from "antd";
 import { BsWhatsapp } from "react-icons/bs";
 
 const Header: React.FC = () => {
   const items = [
     {
       key: "1",
-      label: "Home",
+      label: <a href="#home">Home</a>,
       href: "#home",
     },
     {
       key: "2",
-      label: "Layanan",
+      label: <a href="#layanan">Layanan</a>,
       href: "#layanan",
     },
     {
       key: "3",
-      label: "Klien",
+      label: <a href="#klien">Klien</a>,
       href: "#klien",
     },
     {
       key: "4",
-      label: "Solusi",
+      label: <a href="#solusi">Solusi</a>,
       href: "#solusi",
     },
     {
       key: "5",
-      label: "Harga & Paket",
+      label: <a href="#harga">Harga & Paket</a>,
       href: "#harga",
     },
     {
-      key: "5",
-      label: "Kontak",
+      key: "6",
+      label: <a href="#kontak">Kontak</a>,
       href: "#kontak",
     },
   ];
@@ -40,17 +40,19 @@ const Header: React.FC = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+          <Dropdown menu={{ items }} placement="bottom">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+          </Dropdown>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               {items.map((item, _index) => (
